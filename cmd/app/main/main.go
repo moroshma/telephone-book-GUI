@@ -8,6 +8,7 @@ import (
 func main() {
 	con := posgres.ConnectDB()
 	fl := true
+
 	for fl {
 		fmt.Print("\033[H\033[2J")
 		printMenu()
@@ -29,8 +30,8 @@ func main() {
 }
 
 func printMenu() {
-	fmt.Println("1. Show all users")
-	fmt.Println("2. Add new user")
-	fmt.Println("3. Delete user")
-	fmt.Println("4. Exit")
+	fmt.Printf("1. Show all users\n")
+	fmt.Printf("2. Add new user\n")
+	fmt.Printf("3. Delete user\n")
+	fmt.Printf("4. Exit\n")
 }
